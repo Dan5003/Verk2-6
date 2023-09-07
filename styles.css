@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer{
+    background-color: #8B0000;
+    padding: 20px;
+    margin-top: auto;
+}
+
+ul li{
+    margin-bottom: 5px;
+}
