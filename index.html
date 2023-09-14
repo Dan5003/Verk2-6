@@ -3,40 +3,73 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="/Verk2/styles.css">
+        <link rel="stylesheet" href="styles.css">
         <title>Restaurant Leche</title>
         <meta property="og:title" content="Restaurant Leche"/>
         <meta property="og:type" content="website"/>
 
     </head>
-        <body>
+    <body>
+        <header>
             <h1>Restaurant Leche</h1>
-                <p>The finest restaurant in town!</p>
-                <p><a href="pages/Reservations.html">reserve a table</a></p>
-
-            <h2>Opening hours</h2>
-                <p>Our establishment is open on:</p>
-                <dl>
-                    <dt>Mondays through thursdays</dt>
+            <p>The finest restaurant in town!</p>
+        </header>
+    
+        <nav>
+            <ul>
+                <li><strong>Main Page</strong></li>
+                <li><a href="Pages/aboutUs.html">About us</a></li>
+                <li><a href="Pages/foodMenu.html">Food Menu</a></li>
+                <li><a href="Pages/Reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+        
+        <main>         
+            <section class="content">
+                <h2>Opening hours</h2>
+                    <p>Our establishment is open on:</p>
+                    <dl>
+                        <dt>Mondays through thursdays</dt>
                         <dd>09:00 to 18:00</dd>
-                    <dt>Fridays</dt>
+                        <dt>Fridays</dt>
                         <dd>10:00 to 22:00</dd>
-                    <dt>Saturdays</dt>
+                        <dt>Saturdays</dt>
                         <dd>11:00 to 22:00</dd>
-                </dl>
-            <h2>Menu</h2>
-                <p>Browse through our fine selection of dishes</p>
-                <a href="Pages/foodMenu.html">Food Menu</a>
-
-            <h2>About Us</h2>
-                <p>we are a happy crew that love cooking for our patrons!</p>
-                <a href="pages/aboutUs.html">More about us</a>
-            
-        </body>
+                    </dl>
+            </section>
+            <section class="content">
+                <h2>Menu</h2>
+                    <p>Browse through our fine selection of dishes</p>
+                    <a href="Pages/foodMenu.html">Food Menu</a>
+            </section>
+            <section class="content" id="border">
+                <h2>About Us</h2>
+                    <p>we are a happy crew that love cooking for our patrons!</p>
+                    <p>You can find out more about us here</p>
+                    <a href="pages/aboutUs.html">More about us</a>
+            </section>
+        </main> 
+    </body>
         
         <footer>
+            <section class="content">
+                <P>Veitingastaðurinn ehf. Aðalgata 10 100 Reykjavík</P>
+                <p>Sími 333-4567</p>
+            </section>
+            <section class="content">
+                <h2>Opening hours</h2>
+                    <p>Our establishment is open on:</p>
+                    <dl>
+                        <dt>Mondays through thursdays</dt>
+                        <dd>09:00 to 18:00</dd>
+                        <dt>Fridays</dt>
+                        <dd>10:00 to 22:00</dd>
+                        <dt>Saturdays</dt>
+                        <dd>11:00 to 22:00</dd>
+                    </dl>
+
+
+            </section>
             
-            <P>Veitingastaðurinn ehf. Aðalgata 10 100 Reykjavík</P>
-            <p>Sími 333-4567</p>
         </footer>
 </html>
