@@ -50,6 +50,17 @@ nav li{
     
 }
 
+#food{
+    display: inline-block;
+    text-align: center;
+    margin-left: 30%;
+}
+
+ol li{
+    padding-bottom: 30px;
+}
+
+
 body{
     background-color: #FFF0C8;
     align-items: center;
@@ -106,7 +117,7 @@ footer{
     border-top: 4px solid #FFD365;
 
     padding: 20px;
-    margin-top: 15%;
+    margin-top: 10%;
     color: #FFECBB;
 }
 footer .content{
@@ -121,3 +132,8 @@ dl{
 ul li{
     margin-bottom: 5px;
 }
+
+select{
+    margin-bottom: 15px;
+}
+
