@@ -24,27 +24,42 @@
                 </ul>
             </nav>
         <h1>Reservations</h1>
-        <h3>reserve a table in our restaurant</h3>
         
-
-        what is your name?<br/> <input type="text" placeholder="Enter your name"><br />
-        <br />
-        how many people will be joining?<br/> <input type="number" placeholder="number of people">
-        <br />
-        At what time do you want the table?<br /> <select name="Time" size="6">
-            <option value="10:00"> 10:00 </option>
-            <option value="11:00"> 11:00 </option>
-            <option value="12:00"> 12:00 </option>
-            <option value="13:00"> 13:00 </option>
-            <option value="14:00"> 14:00 </option>
-            <option value="15:00"> 15:00 </option>
-            <option value="16:00"> 16:00 </option>
-            <option value="17:00"> 17:00 </option>
-            <option value="18:00"> 18:00 </option>
-            <option value="19:00"> 19:00 </option>
-            <option value="20:00"> 20:00 </option>
-        </select>
-
+    <fieldset class="box">
+        <legend><b>reserve a table</b></legend>
+            <p>What is your name?<input type="text" placeholder="Enter your name"></p>
+            <p>many people will be joining? <input type="number"></p>
+            <p>what time do you want the table? <input type="datetime-local"></p>
+        </fieldset>
+    <fieldset class="box">
+        <legend><b>Your Information</b></legend>
+            <p>Name</p>
+            <input type="text">
+            <p>Email</p>
+            <input type="email" placeholder="name@example.org">
+            <p>Phone</p>
+            <input type="tel" placeholder="394-3948">
+        </fieldset>
+    <fieldset class="box">
+        <legend><b>Order Food</b></legend>
+            <p>Dish #1</p>
+            <input type="text">
+            <p>Dish #2</p>
+            <input type="text">
+            <p>Dish #3</p>
+            <input type="text">
+            <p>Dish #4</p>
+            <input type="text">
+            <p>Dish #5</p>
+            <input type="text">
+            <p>Your Adress</p>
+            <input type="text">
+        </fieldset>
+    <fieldset class="box">
+        <legend><b>Confirm and Order</b></legend>
+            <p><input type="checkbox">I agree to Restaurant Leches terms</p>
+            <button id="button" type="button">Order</button>
+        </fieldset>
     </body>
     
     <footer>
