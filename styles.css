@@ -22,25 +22,53 @@ html{
     width: 1px;
   }
 
+  :root {
+    /* basic interval is 1rem == 16px */
+    --font-base-body-px: 16px;
+    --spacing: 1rem;
+  
+    /* Maximum width of material */
+    --max-width: 900px;
+  
+    /* Border widths */
+    --border-small: 1px;
+    --border-large: 8px;
+    --border-radius: 6px;
+  
+    /* Colors */
+    --color-gold: #ffe7ae;
+    --color-gold-light: #fff1cf;
+    --color-dark: #2f0505;
+    --color-light: #fff9ee;
+    --color-red: #DC1010;
+  
+    /* Font settings */
+    --font-base-size: 1rem;
+    --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
+    --font-family-heading: 'Lora', Georgia, serif;
+}
+  
 
 
 header{
     display: block;
-    color: #FFECBB;
-    
+    color: var(--color-gold-light);
+    font-family: var(--font-family-heading);
+
     padding: 1rem;
     width: 100%;
 
-    background: linear-gradient(#D30026, #7E0017);
-    border-bottom: 8px solid #FFD365;
+    background-color: var(--color-dark);
     
+
     text-align: center;
 }
 
 nav{
     text-align: center;
-    background-color: #FFDE89;
+    background-color: var(--color-gold-light);
     padding: 1rem;
+    border-bottom: solid var(--border-large) var(--color-gold);
 }
 nav li{
     display: inline-block;
@@ -50,27 +78,23 @@ nav li{
     
 }
 
-#food{
-    display: inline-block;
-    text-align: center;
-    margin-left: 30%;
-}
-
-ol li{
-    padding-bottom: 30px;
-}
-
-
 body{
-    background-color: #FFF0C8;
+    background-color: var(--color-light);
     align-items: center;
 
-    font-family: 'Lora',serif;
+    font-family: var(--font-family-base);
     font-size: 1rem;
     
 }
 main{
-    font-size: 20px;
+
+    font-size: var(--font-base-body-px);   
+}
+
+main li{
+    background-color: var(--color-light);
+    margin: var(--spacing);
+    
 }
 
 .content{
@@ -82,6 +106,12 @@ main{
     width: 40%;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    flex-wrap: wrap;
+}
 
 .box{
     display: inline-block;
@@ -97,28 +127,28 @@ main{
 }
 
 #button{
-    padding: 0.5rem;
+    padding: var(--spacing);
     background-color: #E9E9E9;
-
+    border-radius: var(--border-radius);
 }
 
 
 a:link{
-    color: #DC1010;
+    color: var(--color-red);
     text-decoration: none;
 }
 a:visited{
-    color: #DC1010;
+    color: var(--color-red);
 }
 
 
 footer{
-    background: linear-gradient(#7E0017,#D30026);
-    border-top: 4px solid #FFD365;
+    background-color: var(--color-dark);
+    border-top: var(--border-large) solid var(--color-gold);
 
     padding: 20px;
-    margin-top: 10%;
-    color: #FFECBB;
+    margin-top: 15%;
+    color: var(--color-gold-light);
 }
 footer .content{
     font-size: 20px;
@@ -132,8 +162,3 @@ dl{
 ul li{
     margin-bottom: 5px;
 }
-
-select{
-    margin-bottom: 15px;
-}
-
