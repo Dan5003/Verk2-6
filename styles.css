@@ -98,13 +98,23 @@ main li{
 }
 
 .content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    
+    
+
+    padding: var(--spacing);
+    margin: var(--spacing);
+
+}
+footer .content{
     display: inline-block;
     vertical-align: top;
     
 
     padding: var(--spacing);
     margin: var(--spacing);
-
 }
 
 #contCol{
@@ -116,7 +126,17 @@ main li{
     flex-flow: row wrap;
     justify-content: space-around;
     
+    
 }
+
+.containerus{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+    
+}
+
 
 .container{
     display: flex;
@@ -124,6 +144,11 @@ main li{
     justify-content: space-around;
     
 
+}
+
+#picture{
+    max-width: 100%;
+    height: auto;
 }
 
 .box{
@@ -144,7 +169,13 @@ main li{
     background-color: var(--color-dark);
     border-radius: var(--border-radius);
     color: var(--color-gold-light);
+    align-self: center;
+    display: flex;
     
+}
+section .content{
+    display: flex;
+    flex-flow: row wrap;
 }
 
 
@@ -183,6 +214,4 @@ ul li{
     margin-bottom: 5px;
 }
 
-#buton{
 
-}
